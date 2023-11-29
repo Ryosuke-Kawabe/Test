@@ -8,12 +8,12 @@ with zipfile.ZipFile("kabeposter.zip", 'r') as zip_file:
 for person_idx in range(2): 
     person_keypoints = kabeposter_data['people'][person_idx]['pose_keypoints_2d']
     
-    # 鼻の座標と信頼度
+ 
     nose_x = person_keypoints[0]
     nose_y = person_keypoints[1]
     nose_confidence = person_keypoints[2]
     
-    # 首の座標と信頼度
+    
     neck_x = person_keypoints[3]
     neck_y = person_keypoints[4]
     neck_confidence = person_keypoints[5]
